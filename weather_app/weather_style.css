@@ -14,7 +14,7 @@ body{
     font-size: 2rem;
     font-weight: bold;
     border: 2px solid rgba(128, 128, 128, 0.583);
-    border-radius: 10px;
+    border-radius: 20px;
     margin:10px;
     width:300px;
 } 
@@ -25,7 +25,7 @@ button[type="submit"]{
     background-color: rgb(24, 207, 18);
     color:white;
     border:none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor:pointer;
 }
 button[type="submit"]:hover{
@@ -40,6 +40,7 @@ button[type="submit"]:hover{
     align-items: center;
     box-shadow: 0px 10px 0px rgb(125, 117, 117);
     animation: glow 4s ease-in-out infinite;
+    border-radius: 30px;
 }
 @keyframes glow {
     0%, 100% {
@@ -96,4 +97,8 @@ p{
     font-size: 2.5rem;
     font-weight: bold;
     color:black;
+}
+.center{
+    position: absolute;
+    top:35%;
 }

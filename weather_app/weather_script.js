@@ -3,10 +3,12 @@ const city_input=document.querySelector(".city-inp");
 const card=document.querySelector(".card");
 const apiKey="4f0ca0f782141ac12305aea9c3aa24a7";
 card.style.padding="0px";
+w_form.classList.add("center");
 w_form.addEventListener("submit",async (event)=>{
     event.preventDefault();
     const city=city_input.value;
     card.style.padding="50px";
+    w_form.classList.remove("center");
     if(city){
         try{
             const weather=await getWeatherData(city);
