@@ -2,10 +2,11 @@ const w_form=document.querySelector(".main-form");
 const city_input=document.querySelector(".city-inp");
 const card=document.querySelector(".card");
 const apiKey="4f0ca0f782141ac12305aea9c3aa24a7";
-
+card.style.padding="0px";
 w_form.addEventListener("submit",async (event)=>{
     event.preventDefault();
     const city=city_input.value;
+    card.style.padding="50px";
     if(city){
         try{
             const weather=await getWeatherData(city);
@@ -76,6 +77,17 @@ function emojiFinder(id){
         case (id>=300 && id<400):
             return "🌩️";
         case (id>=500 && id<600):
-            return "";
-    }
+            return "☁️";
+        case (id>=600 && id<700):
+            return "❄️";
+        case (id>=700 && id<800):
+            return "😶‍🌫️";
+        case (id===800):
+            return "☀️";    
+        case (id>=801 && id<810):
+            return "☁️";
+        default:
+            return "❓";
+        }
+
 }
