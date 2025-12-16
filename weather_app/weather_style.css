@@ -6,6 +6,69 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.main_form{
+.main-form{
     margin: 20px;
+}
+.city-inp{
+    padding:10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid rgba(128, 128, 128, 0.583);
+    border-radius: 10px;
+    margin:10px;
+    width:300px;
+} 
+button[type="submit"]{
+    padding:10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: rgb(24, 207, 18);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+button[type="submit"]:hover{
+    background-color: rgb(23, 221, 16);
+}
+.card{
+    background: linear-gradient(180deg,rgb(0, 187, 255),rgb(255, 213, 0));
+    padding: 50px;
+    box-shadow: 4px 4px 10px rgb(92, 91, 91);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 3.5rem;
+    margin-top:0;
+    margin-bottom:25px;
+}
+p{
+    font-size: 1.5rem;
+    margin:5px 0px;
+}
+.citydisp,.temp{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color:black;
+    margin-bottom: 25px;
+}
+.humidity{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.descDisp{
+    font-style:italic;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.Weather{
+    margin:0px;
+    font-size: 7.5rem;
+}
+.errordisp{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:black;
 }

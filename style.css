@@ -3,7 +3,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: ;
+            background-color: grey;
             color: white;
             font-family: 'Arial', sans-serif;
         }
@@ -29,7 +29,7 @@
             justify-content: space-between;
             width: 90%;
             max-width: 1200px;
-            background: rgb(0, 0, 0);
+            background: #161616;
             padding: 10px 20px;
             z-index:1000;
             border-radius: 50px;
