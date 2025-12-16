@@ -1,0 +1,165 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: ;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .cont{
+            margin-left:3vw;
+            margin-top:-22vh;
+        }
+        .vitgpt-header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            padding-top:3vh ;
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .vitgpt-navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            background: rgb(0, 0, 0);
+            padding: 10px 20px;
+            z-index:1000;
+            border-radius: 50px;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        /* Default Navbar */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            opacity: 0.7;
+            font-size: 15px;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+        }
+
+        /* Search Bar */
+        .search-container {
+            display: flex;
+            align-items: center;
+            background: #222;
+            border-radius: 25px;
+            padding: 5px 10px;
+        }
+
+        .search-box {
+            border: none;
+            outline: none;
+            background: transparent;
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            width:15vw;
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .search-btn:hover {
+            color: #888;
+        }
+
+        /* Contact  */
+        .contact-button {
+            background: transparent;
+            border: 1.5px solid white;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .contact-button:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Hamburger Menu */
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        .menu-toggle1 {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 1024px) {
+            .vitgpt-navbar {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        
+            .nav-links {
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: #161616;
+                width: 90%;
+                border-radius: 20px;
+                text-align: center;
+                padding: 15px 0;
+                display: none;
+            }
+        
+            .nav-links.active {
+                display: flex;
+                animation: fadeIn 1s ease;
+            }
+        
+            .nav-links li {
+                margin: 10px 0;
+            }
+        
+            .menu-toggle {
+                display: block;
+            }
+        
+            .contact-button {
+                display: none;
+            }
+        }
